@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-white text-slate-900 antialiased; }
+
+/***** Utility overrides *****/
+.btn-primary { @apply inline-flex items-center rounded-full bg-gradient-to-r from-[#6b2fbf] to-[#8c3bff] px-6 py-3 font-medium text-white shadow-lg shadow-purple-800/30 transition-transform duration-200 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-purple-400; }
+.card { @apply rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black/5; }
